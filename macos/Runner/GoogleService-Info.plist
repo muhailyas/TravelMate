@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>326398993054-of1sv4evhoi35p7quo46qelfmcuaqe0k.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.326398993054-of1sv4evhoi35p7quo46qelfmcuaqe0k</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBAThFlxWlcR6DAncUs6VDhSVZVz-JYMSk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>326398993054</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.travelmate.RunnerTests</string>
+	<key>PROJECT_ID</key>
+	<string>travelmate-a7b2e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>travelmate-a7b2e.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:326398993054:ios:c85a8c9241fa985f71d18f</string>
+</dict>
+</plist>
