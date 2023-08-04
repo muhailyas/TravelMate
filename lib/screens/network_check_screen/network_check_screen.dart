@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:rive/rive.dart';
 import 'package:travelmate/screens/getstarted_screen/screen_setstarted.dart';
 import 'package:travelmate/widgets/text.dart';
-
 import '../bottombar_screen/bottom_navigation_bar.dart';
 
 class NetworkCheckingScreen extends StatelessWidget {

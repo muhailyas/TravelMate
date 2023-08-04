@@ -3,7 +3,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:travelmate/screens/Screen_adminpages/screen_admin.dart';
+import 'package:share_plus/share_plus.dart';
 import 'package:travelmate/firebase/firebase_functions/firebase_functions.dart';
 import 'package:travelmate/screens/about/screen_about.dart';
 import 'package:travelmate/screens/login_screen/screen_login.dart';
@@ -194,14 +194,9 @@ class _SlideDrawerState extends State<SlideDrawer> {
           ListTile(
             leading: const Icon(Icons.ios_share_rounded),
             title: const Text("Share"),
-            onLongPress: () => Navigator.of(context).push(
-              MaterialPageRoute(
-                builder: (context) => const ScreenAdmin(),
-              ),
-            ),
-            // onTap: () => Navigator.of(context).push(MaterialPageRoute(
-            //   builder: (context) => 
-            // )),
+            onTap: () async {
+              await _onShare(context);
+            },
           ),
           /*==============About===============*/
           ListTile(
@@ -283,4 +278,12 @@ class _SlideDrawerState extends State<SlideDrawer> {
     }
     ScaffoldMessenger.of(context).showSnackBar(snackBar);
   }
+}
+
+_onShare(context) async {
+  final box = context.findRenderObject() as RenderBox?;
+  await Share.share(
+      'https://play.google.com/store/apps/details?id=com.waywizard.travelmate',
+      subject: '',
+      sharePositionOrigin: box!.localToGlobal(Offset.zero) & box.size);
 }

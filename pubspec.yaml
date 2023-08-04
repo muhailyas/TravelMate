@@ -54,6 +54,7 @@ dependencies:
   intl: ^0.18.1
   rive: ^0.11.6
   connectivity_plus: ^4.0.1
+  share_plus: ^7.1.0
 
 dev_dependencies:
   flutter_test:

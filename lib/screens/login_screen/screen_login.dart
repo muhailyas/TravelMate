@@ -13,7 +13,7 @@ import '../bottombar_screen/bottom_navigation_bar.dart';
 
 class ScreenLogin extends StatefulWidget {
   const ScreenLogin({super.key});
-
+  
   @override
   State<ScreenLogin> createState() => _ScreenLoginState();
 }
@@ -176,7 +176,7 @@ class _ScreenLoginState extends State<ScreenLogin> {
         context: context,
         backgroundColor: Colors.red,
         message: 'User not found',
-        icon: Icon(Icons.error),
+        icon: const Icon(Icons.error),
       );
     } else if (returnValue == 3) {
       showCustomSnackbar(
