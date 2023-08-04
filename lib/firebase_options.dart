@@ -55,7 +55,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyD4C334WGd_7nXtFs6tNpCDNtFhnQpzvyE',
-    appId: '1:326398993054:android:5ead0e3d98b0823671d18f',
+    appId: '1:326398993054:android:5244df3dfca1543771d18f',
     messagingSenderId: '326398993054',
     projectId: 'travelmate-a7b2e',
     storageBucket: 'travelmate-a7b2e.appspot.com',
