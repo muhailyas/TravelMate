@@ -13,7 +13,7 @@ import '../bottombar_screen/bottom_navigation_bar.dart';
 
 class ScreenLogin extends StatefulWidget {
   const ScreenLogin({super.key});
-  
+
   @override
   State<ScreenLogin> createState() => _ScreenLoginState();
 }
@@ -160,10 +160,11 @@ class _ScreenLoginState extends State<ScreenLogin> {
         icon: const Icon(Icons.error),
       );
     } else if (returnValue == 1) {
-      Navigator.of(context).pushReplacement(
+      Navigator.of(context).pushAndRemoveUntil(
         MaterialPageRoute(
           builder: (context) => const BottomNavigationBarOwn(),
         ),
+        (route) => false,
       );
       showCustomSnackbar(
         context: context,
@@ -186,9 +187,12 @@ class _ScreenLoginState extends State<ScreenLogin> {
         icon: const Icon(Icons.error),
       );
     } else if (returnValue == 11) {
-      Navigator.of(context).pushReplacement(MaterialPageRoute(
-        builder: (context) => const ScreenAdmin(),
-      ));
+      Navigator.of(context).pushAndRemoveUntil(
+        MaterialPageRoute(
+          builder: (context) => const ScreenAdmin(),
+        ),
+        (route) => false,
+      );
     } else {
       showCustomSnackbar(
         context: context,

@@ -144,9 +144,12 @@ class ScreenSignUp extends StatelessWidget {
         await AuthFunctinos.signupUser(name, email, password, context);
     if (authResult == 1) {
       Navigator.pop(context);
-      Navigator.of(context).pushReplacement(MaterialPageRoute(
-        builder: (context) => const ScreenLogin(),
-      ));
+      Navigator.of(context).pushAndRemoveUntil(
+        MaterialPageRoute(
+          builder: (context) => const ScreenLogin(),
+        ),
+        (route) => false,
+      );
       showCustomSnackbar(
           context: context,
           backgroundColor: Colors.green,
